@@ -1,10 +1,77 @@
-div {
-  background-color: brown;
-  font-size: 40px;
-  font-weight: 600;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("/css/components/status-bar.css");
+@import url("/css/components/nav-bar.css");
+@import url("/css/components/screen-header.css");
+@import url("/css/components/user-component.css");
+@import url("/css/components/badge.css");
+@import url("/css/components/icon-row.css");
+@import url("/css/components/all-screen-header.css");
+@import url("/css/reset.css");
+@import url("/css/variable.css");
+@import url("/css/screen/login.css");
+@import url("/css/screen/friend.css");
+@import url("/css/screen/find.css");
+@import url("/css/screen/more.css");
+@import url("/css/screen/setting.css");
+@import url("/css/screen/onechat.css");
+body {
+  font-family: "Open Sans", sans-serif;
 }
-span {
-  background-color: blanchedalmond;
-  font-size: 40px;
-  font-weight: 600;
+.welcome-header {
+  margin: 90px 0px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+
+  margin-bottom: 25px;
+}
+#login-form input:not([type="submit"]) {
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
 }
